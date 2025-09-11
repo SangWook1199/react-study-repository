@@ -1,0 +1,78 @@
+/* App.css - �꾩껜 �� �덉씠�꾩썐 �ㅽ��� */
+
+/* �� �꾩껜 而⑦뀒�대꼫 */
+.app {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* �ㅻ뜑 �곸뿭 */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 硫붿씤 �쒕ぉ */
+.app-header h1 {
+  font-size: 32px;
+  color: #333;
+  margin: 0 0 12px 0;
+  
+  /* �대え吏��� �띿뒪�� 媛꾧꺽 議곗젙 */
+  letter-spacing: -0.5px;
+}
+
+/* 遺��쒕ぉ */
+.app-header p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+/* 移대뱶 洹몃━�� �덉씠�꾩썐 */
+.card-grid {
+  /* Flexbox濡� 移대뱶 �뺣젹 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+  /* 理쒕� �덈퉬 �쒗븳�쇰줈 以묒븰 �뺣젹 */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 諛섏쓳�� �붿옄�� */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .app-header h1 {
+    font-size: 24px;
+  }
+                                                                                                                                                                                                                           
+  .app-header p {
+    font-size: 14px;
+  }
+  
+  .card-grid {
+    gap: 10px;
+  }
+}
+
+/* �ㅽ겕紐⑤뱶 ���� (�좏깮�ы빆) */
+@media (prefers-color-scheme: dark) {
+  .app {
+    background-color: #1a1a1a;
+  }
+  
+  .app-header h1 {
+    color: #f0f0f0;
+  }
+  
+  .app-header p {
+    color: #b0b0b0;
+  }
+}
